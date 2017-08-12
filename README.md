@@ -1,3 +1,3 @@
 # GameOfLife - Program (STAIN)
 
-Project for University AGH - Simulation and control of discrete processes
+Project for - Simulation and control of discrete processes
