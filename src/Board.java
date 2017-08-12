@@ -9,8 +9,8 @@ import javax.swing.JComponent;
 import javax.swing.event.MouseInputListener;
 
 /**
- * Board with Points that may be expanded (with automatic change of cell
- * number) with mouse event listener
+ * Automatic change cell in Board afet mouse click
+ * 
  */
 
 public class Board extends JComponent implements MouseInputListener, ComponentListener {
@@ -26,7 +26,7 @@ public class Board extends JComponent implements MouseInputListener, ComponentLi
 		setOpaque(true);
 	}
 
-	// single iteration
+	// iteration
 	public void iteration() {
 		for (int x = 0; x < points.length; ++x)
 			for (int y = 0; y < points[x].length; ++y)
@@ -38,7 +38,7 @@ public class Board extends JComponent implements MouseInputListener, ComponentLi
 		this.repaint();
 	}
 
-	// clearing board
+	// Board clear
 	public void clear() {
 		for (int x = 0; x < points.length; ++x)
 			for (int y = 0; y < points[x].length; ++y) {
@@ -70,7 +70,7 @@ public class Board extends JComponent implements MouseInputListener, ComponentLi
 		}
 	}
 
-	// load pattern
+	// Pattern Load
 	public void loadPattern(Pattern shape) {
 
 		String[] lines = shape.getPattern();
